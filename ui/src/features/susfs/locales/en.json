@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "SuSFS Manager",
+    "description": "Configure SuSFS path hiding, mount hiding, property spoofing, KSU and advanced options (full BRENE feature set)"
+  },
+  "tabs": {
+    "home": "Home",
+    "android": "Android",
+    "hiding": "Hiding",
+    "spoofing": "Spoofing",
+    "susfs": "SuSFS",
+    "ksu": "KSU",
+    "rom": "ROM",
+    "advanced": "Advanced",
+    "info": "Info"
+  },
+  "home": {
+    "general": "General",
+    "deviceModel": "Device model",
+    "kernelVersion": "Kernel version",
+    "androidVersion": "Android version",
+    "customRom": "Custom ROM",
+    "susfsVersion": "SuSFS version",
+    "susfsVariant": "SuSFS variant",
+    "features": "Kernel features",
+    "apply": "Apply now",
+    "applyOk": "Applied",
+    "applyFail": "Apply failed"
+  },
+  "android": {
+    "title": "Android system options",
+    "developerOptions": "Developer options",
+    "usbDebugging": "USB debugging",
+    "wirelessDebugging": "Wireless debugging",
+    "showRefreshRate": "Show refresh rate",
+    "saturation": "Max color saturation",
+    "disableChildProcessRestrictions": "Disable child process restrictions"
+  },
+  "hiding": {
+    "title": "Path and mount hiding",
+    "dataLocalTmp": "Hide /data/local/tmp",
+    "nonStandardSdcard": "Hide non-standard /sdcard paths",
+    "nonStandardSdcardAndroid": "Hide /sdcard/Android/[data|media|obb]",
+    "customRecovery": "Hide custom recovery paths",
+    "ksuDirectories": "Hide KernelSU directories",
+    "thirdPartyApps": "Hide third-party app folders",
+    "suspiciousPty": "Hide suspicious PTYs",
+    "addonD": "Hide addon.d",
+    "customRomPaths": "Hide custom ROM paths",
+    "customRomPaths2": "Hide custom ROM paths 2",
+    "frameworkRes": "Hide framework-res traces",
+    "lineageStrings": "Hide LineageOS strings",
+    "susMntsNonSu": "Hide suspicious mounts for non-SU processes"
+  },
+  "spoofing": {
+    "title": "Property and identity spoofing",
+    "systemProperties": "Spoof system properties",
+    "osPatch": "Spoof OS security patch level",
+    "vendorPatch": "Spoof vendor security patch level",
+    "uname": "Spoof uname",
+    "customUname": "Custom uname",
+    "unameRelease": "Kernel release",
+    "unameVersion": "Kernel version",
+    "cmdline": "Spoof cmdline / bootconfig",
+    "hosts": "Spoof /system/etc/hosts",
+    "libstagefright": "Spoof libstagefright",
+    "vbmetaHash": "Verified Boot Hash"
+  },
+  "susfsTab": {
+    "title": "Custom SuSFS entries",
+    "susPath": "Custom sus_path",
+    "susPathLoop": "Custom sus_path_loop",
+    "susMap": "Custom sus_map",
+    "openRedirect": "Custom open_redirect (src|dst|flags)",
+    "kernelUmount": "Custom kernel umount",
+    "save": "Save list"
+  },
+  "ksu": {
+    "title": "KernelSU feature toggles",
+    "suCompat": "SU compatibility",
+    "kernelUmount": "Kernel umount",
+    "selinuxHide": "Hide SELinux modifications"
+  },
+  "rom": {
+    "title": "Custom ROM",
+    "pifProps": "PIF-related property handling",
+    "romProps": "ROM property cleanup",
+    "lineageHint": "Lineage-like paths detected"
+  },
+  "advanced": {
+    "title": "Advanced",
+    "avcLogSpoofing": "AVC log spoofing",
+    "shrinkBuffer": "Shrink log buffer",
+    "fixDataLocalTmp": "Fix /data/local/tmp inconsistencies",
+    "breneLogs": "Log BRENE/SuSFS operations",
+    "enableLog": "Verbose logging",
+    "resetDefaults": "Reset to defaults"
+  },
+  "info": {
+    "title": "Status and information",
+    "enabledFeatures": "Enabled kernel features",
+    "unavailable": "susfs binary unavailable"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "loading": "Loading…",
+    "error": "Error"
+  }
+}

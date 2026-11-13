@@ -1,0 +1,21 @@
+[package]
+name = "duck-susfs"
+description = "SuSFS manager."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = false
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+duck-core.workspace = true
+duck-platform.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+thiserror.workspace = true
+toml.workspace = true
+
+[lints]
+workspace = true

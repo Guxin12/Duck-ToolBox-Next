@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "SuSFS管理",
+    "description": "配置 SuSFS 路径隐藏、挂载隐藏、属性伪装、KSU 与高级选项（BRENE 完整功能）"
+  },
+  "tabs": {
+    "home": "首页",
+    "android": "Android",
+    "hiding": "隐藏",
+    "spoofing": "伪装",
+    "susfs": "SuSFS",
+    "ksu": "KSU",
+    "rom": "ROM",
+    "advanced": "高级",
+    "info": "信息"
+  },
+  "home": {
+    "general": "概况",
+    "deviceModel": "设备型号",
+    "kernelVersion": "内核版本",
+    "androidVersion": "Android 版本",
+    "customRom": "自定义 ROM",
+    "susfsVersion": "SuSFS 版本",
+    "susfsVariant": "SuSFS 变体",
+    "features": "内核功能",
+    "apply": "立即应用",
+    "applyOk": "已应用",
+    "applyFail": "应用失败"
+  },
+  "android": {
+    "title": "Android 系统选项",
+    "developerOptions": "开发者选项",
+    "usbDebugging": "USB 调试",
+    "wirelessDebugging": "无线调试",
+    "showRefreshRate": "显示刷新率",
+    "saturation": "最大色彩饱和度",
+    "disableChildProcessRestrictions": "禁用子进程限制"
+  },
+  "hiding": {
+    "title": "路径与挂载隐藏",
+    "dataLocalTmp": "隐藏 /data/local/tmp",
+    "nonStandardSdcard": "隐藏非标准 /sdcard 路径",
+    "nonStandardSdcardAndroid": "隐藏 /sdcard/Android/[data|media|obb]",
+    "customRecovery": "隐藏自定义 Recovery 路径",
+    "ksuDirectories": "隐藏 KernelSU 目录",
+    "thirdPartyApps": "隐藏第三方应用目录",
+    "suspiciousPty": "隐藏可疑 PTY",
+    "addonD": "隐藏 addon.d",
+    "customRomPaths": "隐藏自定义 ROM 路径",
+    "customRomPaths2": "隐藏自定义 ROM 路径 2",
+    "frameworkRes": "隐藏 framework-res 痕迹",
+    "lineageStrings": "隐藏 LineageOS 字符串",
+    "susMntsNonSu": "对非 SU 进程隐藏可疑挂载"
+  },
+  "spoofing": {
+    "title": "属性与身份伪装",
+    "systemProperties": "伪装系统属性",
+    "osPatch": "伪装 OS 安全补丁等级",
+    "vendorPatch": "伪装 Vendor 安全补丁等级",
+    "uname": "伪装 uname",
+    "customUname": "自定义 uname",
+    "unameRelease": "内核 release",
+    "unameVersion": "内核 version",
+    "cmdline": "伪装 cmdline / bootconfig",
+    "hosts": "伪装 /system/etc/hosts",
+    "libstagefright": "伪装 libstagefright",
+    "vbmetaHash": "Verified Boot Hash"
+  },
+  "susfsTab": {
+    "title": "SuSFS 自定义条目",
+    "susPath": "自定义 sus_path",
+    "susPathLoop": "自定义 sus_path_loop",
+    "susMap": "自定义 sus_map",
+    "openRedirect": "自定义 open_redirect (src|dst|flags)",
+    "kernelUmount": "自定义 kernel umount",
+    "save": "保存列表"
+  },
+  "ksu": {
+    "title": "KernelSU 功能开关",
+    "suCompat": "SU 兼容模式",
+    "kernelUmount": "内核 Umount",
+    "selinuxHide": "隐藏 SELinux 修改"
+  },
+  "rom": {
+    "title": "自定义 ROM",
+    "pifProps": "PIF 相关属性处理",
+    "romProps": "ROM 属性清理",
+    "lineageHint": "检测到 Lineage 类路径"
+  },
+  "advanced": {
+    "title": "高级",
+    "avcLogSpoofing": "AVC log 伪装",
+    "shrinkBuffer": "缩小 log 缓冲区",
+    "fixDataLocalTmp": "修复 /data/local/tmp 不一致",
+    "breneLogs": "记录 BRENE/SuSFS 操作日志",
+    "enableLog": "启用详细日志",
+    "resetDefaults": "恢复默认配置"
+  },
+  "info": {
+    "title": "状态与信息",
+    "enabledFeatures": "已启用的内核功能",
+    "unavailable": "susfs 二进制不可用"
+  },
+  "common": {
+    "yes": "是",
+    "no": "否",
+    "save": "保存",
+    "loading": "加载中…",
+    "error": "错误"
+  }
+}
