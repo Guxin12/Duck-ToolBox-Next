@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "SuSFS 管理",
+    "description": "SuSFS 状态与诊断界面原型"
+  },
+  "nav": {
+    "status": "概览",
+    "kernel": "内核信息",
+    "diagnostics": "诊断日志",
+    "about": "关于"
+  },
+  "prototype": {
+    "label": "前端界面原型",
+    "notConnected": "尚未连接设备或后端",
+    "description": "当前仅展示界面结构，不会执行命令或修改设备状态。",
+    "pending": "待接入"
+  },
+  "status": {
+    "title": "SuSFS 状态",
+    "description": "连接只读状态接口后，这里将显示设备返回的信息。",
+    "fields": {
+      "binary": "SuSFS 程序",
+      "variant": "内核变体",
+      "version": "程序版本",
+      "kernel": "内核版本"
+    },
+    "scopeTitle": "只读界面",
+    "scopeDescription": "此原型只预留状态展示位置，没有开关、配置写入或系统修改操作。"
+  },
+  "kernel": {
+    "title": "内核信息",
+    "description": "设备及 SuSFS 支持状态将在后续接入只读查询后显示。",
+    "fields": {
+      "release": "内核版本",
+      "variant": "内核变体",
+      "support": "支持状态"
+    }
+  },
+  "diagnostics": {
+    "title": "诊断日志",
+    "description": "当前为前端原型，尚未读取设备日志。",
+    "logs": "日志预览",
+    "empty": "暂无日志数据。接入只读日志接口后，可在此查看诊断信息。"
+  },
+  "about": {
+    "title": "关于 SuSFS 管理",
+    "description": "本页面是 Duck ToolBox 中的界面原型，后续可在明确授权后接入只读状态与诊断信息。"
+  }
+}

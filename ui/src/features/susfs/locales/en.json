@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "SuSFS Management",
+    "description": "SuSFS status and diagnostics interface prototype"
+  },
+  "nav": {
+    "status": "Overview",
+    "kernel": "Kernel info",
+    "diagnostics": "Diagnostics",
+    "about": "About"
+  },
+  "prototype": {
+    "label": "Frontend prototype",
+    "notConnected": "No device or backend connected",
+    "description": "This screen is a UI prototype only. It does not execute commands or change device state.",
+    "pending": "Not connected"
+  },
+  "status": {
+    "title": "SuSFS status",
+    "description": "Device information will appear here after a read-only status interface is connected.",
+    "fields": {
+      "binary": "SuSFS binary",
+      "variant": "Kernel variant",
+      "version": "Binary version",
+      "kernel": "Kernel version"
+    },
+    "scopeTitle": "Read-only interface",
+    "scopeDescription": "This prototype reserves space for status information. It has no toggles, configuration writes or system-changing actions."
+  },
+  "kernel": {
+    "title": "Kernel information",
+    "description": "Device and SuSFS support information will appear here after a read-only query is integrated.",
+    "fields": {
+      "release": "Kernel version",
+      "variant": "Kernel variant",
+      "support": "Support status"
+    }
+  },
+  "diagnostics": {
+    "title": "Diagnostics logs",
+    "description": "This frontend prototype does not read device logs yet.",
+    "logs": "Log preview",
+    "empty": "No log data. Read-only diagnostics can be shown here once a log interface is connected."
+  },
+  "about": {
+    "title": "About SuSFS Management",
+    "description": "This is a UI prototype in Duck ToolBox. A read-only status and diagnostics interface can be integrated later."
+  }
+}
