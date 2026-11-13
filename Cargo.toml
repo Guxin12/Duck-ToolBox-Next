@@ -26,6 +26,7 @@ duck-linux-env = { path = "crates/duck-linux-env" }
 duck-play-integrity = { path = "crates/duck-play-integrity" }
 duck-device-faker = { path = "crates/duck-device-faker" }
 duck-tricky-store = { path = "crates/duck-tricky-store" }
+duck-susfs = { path = "crates/duck-susfs" }
 
 aes = "0.9.3"
 aes-gcm = "0.11.1"

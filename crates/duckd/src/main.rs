@@ -40,6 +40,8 @@ static FEATURES: &[&dyn Feature] = &[
     &duck_linux_env::FEATURE,
     #[cfg(feature = "misc")]
     &duck_misc::FEATURE,
+    #[cfg(feature = "susfs")]
+    &duck_susfs::FEATURE,
 ];
 
 fn cli() -> clap::Command {

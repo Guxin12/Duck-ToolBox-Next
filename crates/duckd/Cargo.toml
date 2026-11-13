@@ -13,7 +13,7 @@ path = "src/main.rs"
 
 # Each tool is an optional crate, so a build can ship any subset of them.
 [features]
-default = ["rkp", "rkp-device", "tee-attestation", "device-ids", "tricky-store", "play-integrity", "device-faker", "kernel-modules", "zram", "linux-env", "system", "misc"]
+default = ["rkp", "rkp-device", "tee-attestation", "device-ids", "tricky-store", "play-integrity", "device-faker", "kernel-modules", "zram", "linux-env", "system", "misc", "susfs"]
 lite = ["tricky-store", "rkp", "rkp-device"]
 misc = ["dep:duck-misc"]
 linux-env = ["dep:duck-linux-env"]
@@ -27,6 +27,7 @@ tee-attestation = ["dep:duck-tee-attestation"]
 device-ids = ["dep:duck-device-ids"]
 tricky-store = ["dep:duck-tricky-store"]
 system = ["dep:duck-system"]
+susfs = ["dep:duck-susfs"]
 
 [dependencies]
 anyhow.workspace = true
@@ -45,6 +46,7 @@ duck-linux-env = { workspace = true, optional = true }
 duck-play-integrity = { workspace = true, optional = true }
 duck-device-faker = { workspace = true, optional = true }
 duck-tricky-store = { workspace = true, optional = true }
+duck-susfs = { workspace = true, optional = true }
 serde.workspace = true
 serde_json.workspace = true
 tokio.workspace = true
