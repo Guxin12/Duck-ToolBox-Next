@@ -149,9 +149,7 @@ function yesNo(v: boolean | null | undefined) {
         type="button"
         class="rounded-full px-3 py-1 text-sm"
         :class="
-          tab === id
-            ? 'bg-primary text-primary-foreground'
-            : 'bg-muted text-muted-foreground'
+          tab === id ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'
         "
         @click="tab = id"
       >
@@ -159,7 +157,11 @@ function yesNo(v: boolean | null | undefined) {
       </button>
     </nav>
 
-    <p v-if="message" class="text-sm" :class="messageError ? 'text-destructive' : 'text-muted-foreground'">
+    <p
+      v-if="message"
+      class="text-sm"
+      :class="messageError ? 'text-destructive' : 'text-muted-foreground'"
+    >
       {{ message }}
     </p>
     <p v-if="loading" class="text-sm text-muted-foreground">{{ t("susfs.common.loading") }}</p>
@@ -230,11 +232,7 @@ function yesNo(v: boolean | null | undefined) {
           class="flex items-center justify-between rounded-lg border p-3 text-sm"
         >
           <span>{{ t(`susfs.android.${item[1]}`) }}</span>
-          <input
-            type="checkbox"
-            :checked="!!config[item[0]]"
-            @change="toggle(item[0])"
-          />
+          <input type="checkbox" :checked="!!config[item[0]]" @change="toggle(item[0])" />
         </label>
       </section>
 
@@ -291,10 +289,7 @@ function yesNo(v: boolean | null | undefined) {
             class="w-full rounded border bg-background px-2 py-1"
             :value="config.custom_uname_kernel_release"
             @change="
-              setString(
-                'custom_uname_kernel_release',
-                ($event.target as HTMLInputElement).value,
-              )
+              setString('custom_uname_kernel_release', ($event.target as HTMLInputElement).value)
             "
           />
           <label class="mt-2 block">{{ t("susfs.spoofing.unameVersion") }}</label>
@@ -302,10 +297,7 @@ function yesNo(v: boolean | null | undefined) {
             class="w-full rounded border bg-background px-2 py-1"
             :value="config.custom_uname_kernel_version"
             @change="
-              setString(
-                'custom_uname_kernel_version',
-                ($event.target as HTMLInputElement).value,
-              )
+              setString('custom_uname_kernel_version', ($event.target as HTMLInputElement).value)
             "
           />
           <label class="mt-2 block">{{ t("susfs.spoofing.vbmetaHash") }}</label>
@@ -323,7 +315,13 @@ function yesNo(v: boolean | null | undefined) {
       <section v-show="tab === 'susfs'" class="space-y-3">
         <h2 class="text-base font-medium">{{ t("susfs.susfsTab.title") }}</h2>
         <div
-          v-for="kind in ['sus_path', 'sus_path_loop', 'sus_map', 'open_redirect', 'kernel_umount'] as const"
+          v-for="kind in [
+            'sus_path',
+            'sus_path_loop',
+            'sus_map',
+            'open_redirect',
+            'kernel_umount',
+          ] as const"
           :key="kind"
           class="space-y-1"
         >
@@ -343,9 +341,7 @@ function yesNo(v: boolean | null | undefined) {
           <textarea
             class="min-h-24 w-full rounded border bg-background p-2 font-mono text-xs"
             :value="customText[kind]"
-            @change="
-              saveCustomList(kind, ($event.target as HTMLTextAreaElement).value)
-            "
+            @change="saveCustomList(kind, ($event.target as HTMLTextAreaElement).value)"
           />
         </div>
       </section>

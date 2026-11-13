@@ -8,9 +8,9 @@ mod cli;
 mod config;
 mod custom;
 mod error;
+mod paths;
 mod status;
 mod susfs;
-mod paths;
 
 pub use cli::{Command, FEATURE};
 pub use config::SusfsConfig;
