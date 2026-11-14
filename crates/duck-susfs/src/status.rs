@@ -99,7 +99,10 @@ fn read_kernel_release() -> Option<String> {
 fn detect_custom_rom() -> Option<bool> {
     // Light check used by BRENE WebUI (lineage string under /system).
     let out = std::process::Command::new("sh")
-        .args(["-c", r#"find /system -iname '*lineage*' 2>/dev/null | head -1"#])
+        .args([
+            "-c",
+            r#"find /system -iname '*lineage*' 2>/dev/null | head -1"#,
+        ])
         .output()
         .ok()?;
     Some(!String::from_utf8_lossy(&out.stdout).trim().is_empty())
