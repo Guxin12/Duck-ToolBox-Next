@@ -74,7 +74,8 @@ impl SusfsTool {
         if flags.is_empty() {
             self.run(&["add_open_redirect", from, to]).map(|_| ())
         } else {
-            self.run(&["add_open_redirect", from, to, flags]).map(|_| ())
+            self.run(&["add_open_redirect", from, to, flags])
+                .map(|_| ())
         }
     }
 
@@ -88,11 +89,8 @@ impl SusfsTool {
     }
 
     pub fn hide_sus_mnts_for_non_su_procs(&self, on: bool) -> anyhow::Result<()> {
-        self.run(&[
-            "hide_sus_mnts_for_non_su_procs",
-            if on { "1" } else { "0" },
-        ])
-        .map(|_| ())
+        self.run(&["hide_sus_mnts_for_non_su_procs", if on { "1" } else { "0" }])
+            .map(|_| ())
     }
 
     pub fn set_cmdline_or_bootconfig(&self, path: &str) -> anyhow::Result<()> {
