@@ -40,7 +40,10 @@ impl CustomLists {
     pub fn load(ctx: &Context) -> anyhow::Result<Self> {
         ensure_data_dir(ctx)?;
         Ok(Self {
-            sus_path: read_lines(&paths::custom_file(ctx, CustomListKind::SusPath.file_name()))?,
+            sus_path: read_lines(&paths::custom_file(
+                ctx,
+                CustomListKind::SusPath.file_name(),
+            ))?,
             sus_path_loop: read_lines(&paths::custom_file(
                 ctx,
                 CustomListKind::SusPathLoop.file_name(),
